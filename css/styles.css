@@ -1,0 +1,579 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #fff8f8;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  /* padding: 30px; */
+}
+
+nav ul li {
+  display: inline;
+  /* margin-right: 20px; */
+  padding: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-style:normal;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:larger;
+  font: weight 500px;
+}
+
+.navbar-gray {
+background-color: #e9e9e9; /* رنگ مورد نظر خود را اینجا قرار دهید */
+}
+
+.navbar-white {
+background-color: white; /* رنگ مورد نظر خود را اینجا قرار دهید */
+}
+
+.text-white {
+color: white; /* اگر نوشته‌ها هم باید رنگ سفید باشند */
+}
+/* Slide show images */
+.carousel-item img {
+width: 20%;
+height: auto;
+}
+
+.navbar-nav li a {
+float: right;
+text-align: left;
+}
+
+
+main {
+  width: 80%;
+  margin: 20px auto;
+  text-align: justify;
+} 
+
+button {
+  display: block;
+  /* margin: 20px auto; */
+  padding: 10px 20px;
+  background-color: #c2c2c2;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #e2d3ff;
+}
+
+/* gallery */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #241e1e;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo {
+  margin: 10px;
+}
+
+.photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* login */
+.login_box {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+:root {
+--primary-color: #ffffff;
+--second-color: #1d1b1b;
+--black-color: #292828;
+}
+
+body {
+background-image: url("https://drive.google.com/uc?export=view&id=1uCohtd5e8ZjrZrhykzct1o1DAE9JNVfS");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+a {
+text-decoration: none;
+color: var(--second-color);
+}
+
+a:hover {
+text-decoration: underline #1d1b1b;
+}
+
+.wrapper {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: rgba(0, 0, 0, 0.2);
+}
+
+.login_box {
+position: relative;
+width: 450px;
+backdrop-filter: blur(25px);
+border: 2px solid var(--primary-color);
+border-radius: 15px;
+padding: 7.5em 2.5em 4em 2.5em;
+color: var(--second-color);
+box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+.login-header {
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: var(--primary-color);
+width: 140px;
+height: 70px;
+border-radius: 0 0 20px 20px;
+}
+
+.login-header span {
+font-size: 30px;
+color: var(--black-color);
+}
+
+.login-header::before {
+content: "";
+position: absolute;
+top: 0;
+left: -30px;
+width: 30px;
+height: 30px;
+border-top-right-radius: 50%;
+background: transparent;
+box-shadow: 15px 0 0 0 var(--primary-color);
+}
+
+.login-header::after {
+content: "";
+position: absolute;
+top: 0;
+right: -30px;
+width: 30px;
+height: 30px;
+border-top-left-radius: 50%;
+background: transparent;
+box-shadow: -15px 0 0 0 var(--primary-color); /* Removed space before --primary-color */
+}
+
+.input_box {
+position: relative;
+display: flex;
+flex-direction: column;
+margin: 20px 0;
+}
+
+.input-field {
+width: 100%;
+height: 55px;
+font-size: 16px;
+background: transparent;
+color: var(--second-color);
+padding-inline: 20px 50px;
+border: 2px solid var(--primary-color);
+border-radius: 30px;
+outline: none;
+}
+
+#user {
+margin-bottom: 10px;
+}
+
+.label {
+position: absolute;
+top: 15px;
+left: 20px;
+transition: 0.2s;
+}
+
+.input-field:focus ~ .label,
+.input-field:valid .label {
+/* Added missing closing brace here */
+position: absolute;
+top: -10px;
+left: 20px;
+font-size: 14px;
+background-color: var(--primary-color);
+border-radius: 30px;
+color: var(--black-color);
+padding: 0 10px;
+} /* Closed the missing brace */
+
+.icon {
+position: absolute;
+top: 18px;
+right: 25px;
+font-size: 20px;
+}
+
+.remember-forgot {
+display: flex;
+justify-content: space-between;
+font-size: 15px;
+}
+
+.input-submit {
+width: 100%;
+height: 50px;
+background: #ececec;
+font-size: 16px;
+font-weight: 500;
+border: none;
+border-radius: 30px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.input-submit:hover {
+background: var(--second-color);
+}
+
+.register {
+text-align: center;
+}
+
+.register a {
+font-weight: 500;
+}
+
+@media only screen and (max-width: 564px) {
+.wrapper {
+  padding: 20px;
+}
+
+.login_box {
+  padding: 7.5em 1.5em 4em 1.5em;
+}
+}
+/* end login */
+
+/* navbar
+
+.navbar-green {
+background-color: #28a745;
+color: #fff;
+}
+
+/* Logo */
+.navbar-brand img {
+transition: transform 0.3s ease-in-out;
+}
+
+.navbar-brand img:hover {
+transform: scale(1.1);
+}
+
+/* Toggle icon*/
+.navbar-toggler-icon {
+background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Animation for toggle icon*/
+.navbar-toggler {
+transition: transform 0.3s ease-in-out;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+transform: rotate(90deg);
+}
+
+/* Animation for links*/
+.navbar-nav .nav-link {
+transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+color: #ffc107;
+} 
+
+.main-image {
+max-width: 100%; 
+height: auto;
+}
+
+.main-image-box {
+display: flex;
+justify-content: center;
+}
+
+@media (max-width: 400px) {
+.main-image-box {
+  display: none;
+}
+}
+
+/* Some points for the main part of the template */
+
+/* center-container */
+.center-container {
+display: flex;
+flex-direction: column;
+
+flex-grow: 1;
+margin-top: 10px;
+margin-bottom: 20px;
+
+justify-content: center;
+align-items: center;
+/* Font-family for everything within main */
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: normal;
+min-height: 100vh;
+}
+
+/* tables inside the main */
+main.container.center-container table {
+border-collapse: separate; 
+border-spacing: 5px; 
+width: 100%; 
+}
+
+main.container.center-container table td {
+padding-right: 10px; 
+}
+
+main.container.center-container table ul {
+list-style-type: none; 
+padding: 0; 
+}
+
+main.container.center-container table li {
+margin-bottom: 10px; 
+}
+
+/* titles and texts inside of main */ 
+/* normal text / smallest text is already in the center-container */
+main.container.center-container h1 {
+/* for largest titles / other largest texts you might need */
+font-size: 21px; 
+font-weight: normal; 
+}
+
+main.container.center-container h2 {
+/* for secondary titles / other second largests texts you might need */
+font-size: 19px; 
+font-weight: normal; 
+}
+
+/* spaces within the main between each element by default, change if it doesn't suit a situation with your own page but keep for most cases? */
+main.container.center-container > * {
+margin-bottom: 30px; 
+}
+
+/* points for main part for bigger screens */
+
+@media (min-width: 401px) {
+
+/* tables inside the main */
+main.container.center-container table {
+border-collapse: separate; 
+border-spacing: 10px; 
+width: 100%; 
+}
+
+main.container.center-container table td {
+padding-right: 15px; 
+}
+
+main.container.center-container table ul {
+list-style-type: none; 
+padding: 0; 
+}
+
+main.container.center-container table li {
+margin-bottom: 10px; 
+}
+
+/* titles and texts inside of main */ 
+/* normal text / smallest text is already in the center-container */
+main.container.center-container h1 {
+/* for largest titles / other largest texts you might need */
+font-size: 25px; 
+font-weight: normal; 
+}
+
+main.container.center-container h2 {
+/* for secondary titles / other second largests texts you might need */
+font-size: 20px; 
+font-weight: normal; 
+}
+
+/* spaces within the main between each element by default, change if it doesn't suit a situation with your own page but keep for most cases? */
+main.container.center-container > * {
+margin-bottom: 30px; 
+}
+
+}
+
+
+/* image under slideshow */
+.rounded-circle {
+width: 200px;
+height: 200px;
+}
+
+
+/* ّFooter */
+/* CSS Yashmak with beautiful animations*/
+
+/* Background icons*/
+.social-icons li a {
+color: #e4dede;
+transition: transform 0.3s ease-in-out;
+}
+
+/* Hover animation for icons*/
+.social-icons li a:hover {
+transform: scale(1.2);
+}
+
+/* Hover animation for contact information*/
+.contact-info li {
+transition: color 0.3s ease-in-out;
+
+
+}
+
+.contact-info li:hover {
+color: #ffc107;
+
+}
+
+/* Map */
+#map {
+height: 300px;
+width: 100%;
+}
+
+/* footer */
+.bg-dark.footer-bg {
+background-image: url('image/Footer.png'); 
+background-size: cover;
+background-position: center;
+}
+
+
+
+
+.About {
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight:normal;
+font-size:larger;
+}
+
+.about-us{
+
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bolder;
+
+}
+
+.more{
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bolder;
+}
+
+.info{
+
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight: bold;
+}
+
+.info1{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-weight:lighter;
+font-size:larger;
+padding-left: 20px; 
+}
+
+
+
+
+  /* Custom CSS for responsiveness */
+  /* Navbar */
+  @media (max-width: 767px) {
+    .navbar-brand img {
+      width: 100px; /* Adjust as needed */
+      height: auto;
+    }
+  }
+
+  /* Main Content */
+  @media (min-width: 768px) {
+    .center-container {
+      margin-top: 20px;
+    }
+  }
+
+  /* Circle Container */
+  .rounded-circle {
+    margin-bottom: 20px;
+  }
+
+  /* Footer */
+  .footer-bg {
+    background-color: #343a40 !important;
+  }
+
+  .text-dark-gray {
+    color: #ccc;
+  }
+
+  .text-dark-gray a {
+    color: #ccc;
+  }
+
+  /* for comment page */
+
+  /* .comment-image {
+    min-contrast-ratio:   4.5 !default;
+  } */
