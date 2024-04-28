@@ -41,14 +41,14 @@ async function onLogin() {
         window.location.replace('/index.html');
     })
     .catch(error => {
-        showToast(error.message, 'info');
+        showToast(error.message, 'warning');
     });
 
 };
 
 //api call
 async function authorize(userEmail, password) {
-    const authUrl = 'http://localhost:5050/api/v1/auth'
+    const authUrl = `${CONFIG.API_BASE_URL}/auth`
       
     //post request
     const postData = {

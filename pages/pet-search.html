@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLove - Search</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <script src="/js/common.js"></script>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <div id="navbar-container"></div>
+  
+  <!-- Main Content -->
+  <main class="container top-container">   
+    <div class="main-image-box">
+      <img src="/image/Header1.png" alt="Header animals" class="main-image">
+    </div> 
+    <div style="width: 100%;">
+      <form method="POST" class="needs-validation" autocomplete="off" id="petSearchForm">
+        <div class="row">
+          <div class="col-md-12 school-options-dropdown text-center">
+            <div class="dropdown btn-group">
+              <select id="category" class="form-select position-relative" aria-label="Select Pet Category" style="width:150px;">
+              </select>
+            </div>
+            <br />
+            <br />
+            <div class="container">
+              <!-- Insert Cards into below -->
+              <div class="row" id="cardGrid"></div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Toast container  -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
+  <!-- Custom Script -->
+  <script src="/js/config.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/toast.js"></script>
+  <script src="/js/pet-search.js"></script>
+
+</body>
+</html>

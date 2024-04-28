@@ -1,9 +1,7 @@
-
-<!-- navbar.html -->
 <nav class="navbar navbar-expand-lg navbar-gray bg-gray text-white">
   <!-- logo-->
   <a class="navbar-brand" href="#">
-    <img src="/image/log.png" width="150" height="100" alt="Logo">
+    <img src="../image/log.png" width="150" height="100" alt="Logo">
   </a>
   <!--Toggle button-->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -16,24 +14,34 @@
       <li class="nav-item active">
         <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/Features.html">Pets</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Post
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/pages/history.html">Member Post History</a>          
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Pricing.html">Posts</a>
+        <a class="nav-link" href="/pages/pet-search.html">Pet Search</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/About.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/register.html">Register</a>
+        <a class="nav-link" href="/pages/about.html">About</a>
+      </li>      
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Register
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/pages/registration.html">Member Registration</a>
+          <a class="dropdown-item" href="/pages/petRegistration.html">Pet Registration</a>
+        </div>
       </li>
     </ul>
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <a class="nav-link" href="/pages/login.html">Login</a>
       </li>
     </ul>
   </div>
 </nav>
-

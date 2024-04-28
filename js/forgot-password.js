@@ -1,3 +1,6 @@
+const email = document.getElementById("email")
+const btnResetRequest = document.getElementById('btnResetRequest');
+
 document.addEventListener('DOMContentLoaded', function() {
     'use strict';
     // Custom Bootstrap validations
@@ -26,24 +29,28 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-//user authorization
+//Forgot password request
 async function onForgetPassword() {
-    const email = document.getElementById("email").value;
-    await forgotPassword(email)
-    .then(data => {
-        console.log(data);
-        showToast(`Link to reset password successfully sent to ${email}`, 'success');
+    btnResetRequest.disabled = true;
+    email.disabled = true;
+    btnResetRequest.textContent= "Requesting password reset link";
+
+    await forgotPassword(email.value)
+    .then(data => {        
+        btnResetRequest.textContent= "Reset link sent";
+        showToast(`Link to reset password successfully sent to ${email.value}`, 'success');
     })
     .catch(error => {
-        console.log(data);
+        btnResetRequest.disabled = false;
+        email.disabled = false;
+        btnResetRequest.textContent= "Request password reset link";
         showToast(error.message, 'info');  
     });
-
 };
 
 //api call
 async function forgotPassword(userEmail) {
-    const authUrl = 'http://localhost:5050/api/v1/forgot-password'
+    const forgotPasswordUrl = `${CONFIG.API_BASE_URL}/forgot-password`
     
     //post request
     const postData = {
@@ -61,7 +68,7 @@ async function forgotPassword(userEmail) {
 
 
     try {
-        const response = await fetch(authUrl, options);
+        const response = await fetch(forgotPasswordUrl, options);
       
         // Response data
         const data = await response.json();

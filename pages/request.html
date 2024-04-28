@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetLove - Adaptation Request</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="/css/history.css">
+  <!-- <link rel="stylesheet" href="/css/request11.css"> -->
+  <script src="/js/common.js"></script>
+</head>
+
+<body>
+  <div id="navbar-container"></div>
+
+  <!-- Main Content -->
+  <main class="container center-container">   
+    <div class="main-image-box">
+      <img src="/image/Header1.png" alt="Header animals" class="main-image">
+    </div> 
+    <h3>Request Form</h3>
+    <section class="h-100">
+      <div class="container  h-100">
+        <div class="row justify-content-sm-center h-100">
+          <div class="style=width: 18rem;">
+            <div class="card shadow-lg">
+              <div class="card-body p-4">
+                <div class="container">
+                  <div class="col-sm pet-info">
+                    <table>
+                      <tr>
+                        <td>
+                          <h4 class="fs-4 card-title fw-bold mb-4">Information</Form></h4>
+                          <div class="row no-gutters">
+                            <div class="pet-image" id="pet-image">
+                              <!--Pet Image are displayed dynamically-->
+                            </div>
+                          </div>  
+                        </td>
+                        <td>
+                          <div class="row no-gutters">
+                            <table class="info-table">
+                              <tbody class="info-tbody">
+                                <tr id="pet-id">
+                                  <th hidden="true">Pet ID</th>
+                                </tr>
+                                <tr id="breed">
+                                  <th>Breed</th>
+                                </tr>
+                                <tr id="age">
+                                  <th>Age</th>
+                                </tr>
+                                <tr id="colour">
+                                  <th>Colour</th>
+                                </tr>
+                                <tr id="weight">
+                                  <th>Weight</th>
+                                </tr>
+                                <tr id="description">
+                                  <th>Description</th>
+                                </tr>
+                                <tr id="email" hidden="true">
+                                  <th>email</th>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>      
+                        </td>
+                      </tr>     
+                      <tr>
+                        <td colspan="2">
+                          <div class="message-area">
+                            <h4 class="fs-4 card-title fw-bold mb-4">Message&nbsp;&nbsp;</h4>
+                            <label>Please write your detail information!</label>
+                          </div>
+                          <form method="POST" class="needs-validation" autocomplete="off" id="request-form">
+                            <div class="d-flex flex-column">
+                              <textarea name="" id="message-field" rows="10" class="mb-3" required></textarea>
+                              <button type="submit" class="btn btn-primary align-self-end" id="send-request">Request</button>
+                            </div>
+                          </form>
+                        </td>
+                      </tr>                   
+                    </table>                
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Toast container  -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <!-- Footer -->
+  <div id="footer-container"></div>
+ 
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Custom Script -->
+  <script src="/js/config.js"></script>
+  <script src="/js/request.js"></script>
+  <script src="/js/toast.js"></script>
+  <script src="/js/navbar.js"></script>
+  <script src="/js/footer.js"></script>
+  <script src="/js/toast.js"></script>
+</body>
+
+</html>
